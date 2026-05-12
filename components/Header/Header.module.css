@@ -1,0 +1,130 @@
+.homeLink {
+  transition: 300ms;
+}
+
+.homeLink:hover {
+  transform: scale(1.05);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.nav {
+  display: none;
+}
+
+.burger {
+  display: block;
+  border: none;
+  transition: 300ms ease;
+  background-color: #fff;
+}
+
+.burger:hover,
+.burger:active,
+.burger:focus {
+  transform: rotate(90deg);
+}
+
+@media only screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+    gap: 15px;
+  }
+  .burger {
+    display: none;
+  }
+}
+
+.navLink {
+  text-decoration: none;
+  color: #641639;
+  padding: 12px;
+  border-radius: 20px;
+  transition: 300ms;
+}
+
+.navLink:hover,
+.navLink:focus {
+  background-color: #fed1e3;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #fff9fb; */
+  padding: 20px 20px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  transition: 0.3s ease;
+}
+.show {
+  transform: translateY(0);
+}
+
+.hide {
+  transform: translateY(-100%);
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+
+  background-color: rgba(100, 22, 57, 0.7);
+  backdrop-filter: blur(2px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 999;
+}
+
+.modal {
+  position: relative;
+  width: 50vh;
+  height: 90vh;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalNav {
+  display: flex;
+  gap: 50px;
+  font-size: 30px;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.modalLink {
+  text-decoration: none;
+  color: white;
+}
+.modalClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 3px #fff solid;
+  border-radius: 50px;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 30px;
+  font-weight: 900;
+  background-color: transparent;
+}
+.modalClose:hover {
+  background: #fff;
+  color: #000;
+}

@@ -1,0 +1,102 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 100px;
+  text-align: center;
+  height: 90vh;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+    url(/grid.webp);
+  background-size: 500px 150px;
+  overflow: visible;
+}
+.heroBtn {
+  width: 80%;
+  background-color: #fff;
+  color: #641639;
+  padding: 30px;
+  border: 3px #fca9d3 solid;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  text-indent: 5px;
+  text-align: center;
+  transition: 300ms;
+  cursor: pointer;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+.heroBtn:hover {
+  background-color: #fed1e3;
+  border-radius: 50px;
+}
+
+.firstHeading {
+  margin-top: 60px;
+  color: #641639;
+  font-size: 35px;
+  font-weight: 700;
+}
+.heroText {
+  margin-bottom: 20px;
+  color: #641639;
+  font-size: 20px;
+  letter-spacing: 10px;
+}
+.collection {
+  padding-top: 60px;
+}
+.secondHeading {
+  color: #641639;
+  font-size: 35px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 60px;
+  /* margin-top: 60px; */
+}
+
+.howList {
+  margin-top: 60px;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-inline-start: 0px;
+}
+@media only screen and (max-width: 767px) {
+  .howList {
+    flex-direction: column;
+  }
+}
+
+.howItem {
+  width: calc(100% - 20px * 3);
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.howText {
+  width: 70%;
+  text-align: center;
+  font-size: 20px;
+  color: #641639;
+}
+
+.howHeading {
+  text-align: center;
+  font-size: 26px;
+  color: #641639;
+}
+.howIcon {
+  flex-shrink: 0;
+}

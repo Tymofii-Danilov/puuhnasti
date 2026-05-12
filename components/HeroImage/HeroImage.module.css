@@ -1,0 +1,13 @@
+.heroImage {
+  object-fit: contain;
+}
+.wrapper {
+  position: relative;
+
+  width: 90%;
+  aspect-ratio: 6 / 2;
+  max-width: 80%;
+  margin: 0 auto;
+
+  overflow: hidden;
+}

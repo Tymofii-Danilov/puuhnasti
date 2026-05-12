@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 480px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+    max-width: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding: 0 48px;
+  }
+}
+.customPagination {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 20px;
+  --swiper-pagination-color: rgba(255, 0, 140, 0.4);
+  --swiper-pagination-bullet-size: 5px;
+  --swiper-pagination-bullet-horizontal-gap: 56px;
+}

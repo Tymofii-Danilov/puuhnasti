@@ -1,0 +1,25 @@
+.list {
+  width: 100%;
+  margin-bottom: 100px;
+}
+.list :global(.swiper-wrapper) {
+  transition-timing-function: linear; /* ← прибирає ease між слайдами */
+}
+
+.list :global(.swiper-slide) {
+  width: auto;
+}
+
+.rugsPics {
+  display: block;
+  height: 400px;
+  width: auto;
+  object-fit: cover;
+  border: 25px rgba(255, 0, 140, 0.2) dashed;
+  perspective: 2000px;
+  transform-style: preserve-3d;
+}
+.rugsPics:hover {
+  border: 25px rgba(255, 0, 140, 0.2) double;
+  transform: scale(1.01);
+}
