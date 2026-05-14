@@ -1,9 +1,6 @@
 .list {
   width: 100%;
-  margin-bottom: 100px;
-}
-.list :global(.swiper-wrapper) {
-  transition-timing-function: linear; /* ← прибирає ease між слайдами */
+  margin-bottom: 50px;
 }
 
 .list :global(.swiper-slide) {
@@ -12,14 +9,21 @@
 
 .rugsPics {
   display: block;
-  height: 400px;
+  height: 300px;
   width: auto;
   object-fit: cover;
-  border: 25px rgba(255, 0, 140, 0.2) dashed;
-  perspective: 2000px;
-  transform-style: preserve-3d;
+  border-radius: 10%;
 }
 .rugsPics:hover {
-  border: 25px rgba(255, 0, 140, 0.2) double;
-  transform: scale(1.01);
+  transform: scale(0.99);
+}
+@media only screen and (min-width: 768px) {
+  .rugsPics {
+    height: 400px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .rugsPics {
+    height: 500px;
+  }
 }

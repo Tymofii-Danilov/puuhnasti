@@ -3,11 +3,7 @@
 }
 .wrapper {
   position: relative;
-
   width: 90%;
-  aspect-ratio: 6 / 2;
-  max-width: 80%;
+  aspect-ratio: 8 / 2;
   margin: 0 auto;
-
-  overflow: hidden;
 }

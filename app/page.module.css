@@ -2,21 +2,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  padding-bottom: 100px;
+  justify-content: space-evenly;
+  padding: 20px;
   text-align: center;
-  height: 90vh;
+  padding-bottom: 100px;
+  height: 93vh;
   background-image:
     linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
     url(/grid.webp);
   background-size: 500px 150px;
-  overflow: visible;
 }
 .heroBtn {
-  width: 80%;
+  width: 70%;
   background-color: #fff;
   color: #641639;
-  padding: 30px;
+  padding: 15px;
   border: 3px #fca9d3 solid;
   border-radius: 25px;
   font-size: 16px;
@@ -26,38 +26,42 @@
   text-align: center;
   transition: 300ms;
   cursor: pointer;
-  margin-top: 30px;
   text-decoration: none;
 }
 
 .heroBtn:hover {
-  background-color: #fed1e3;
+  background-image: linear-gradient(#86224f, #f15b97);
+  color: #fff;
   border-radius: 50px;
 }
 
 .firstHeading {
-  margin-top: 60px;
-  color: #641639;
-  font-size: 35px;
-  font-weight: 700;
+  background-image: linear-gradient(#86224f, #f15b97);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: -4%;
 }
 .heroText {
-  margin-bottom: 20px;
-  color: #641639;
-  font-size: 20px;
+  color: #f15b97;
+  font-size: 16px;
   letter-spacing: 10px;
 }
+
 .collection {
-  padding-top: 60px;
+  padding: 20px;
 }
 .secondHeading {
-  color: #641639;
-  font-size: 35px;
-  letter-spacing: 2px;
-  font-weight: 700;
+  background-image: linear-gradient(#86224f, #f15b97);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 36px;
+  font-weight: 900;
+  letter-spacing: -4%;
   text-align: center;
-  margin-bottom: 60px;
-  /* margin-top: 60px; */
 }
 
 .howList {
@@ -99,4 +103,72 @@
 }
 .howIcon {
   flex-shrink: 0;
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(#86224f21, #f15b9718);
+  border-radius: 50px;
+  padding: 20px;
+}
+.aboutMeImg {
+  width: auto;
+  height: auto;
+  border-radius: 50px;
+}
+.aboutMeText {
+  color: #641639;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+  padding: 0 20px;
+}
+.aboutMeHeadingMob {
+  display: block;
+}
+.aboutMeHeadingPc {
+  display: none;
+}
+@media only screen and (min-width: 768px) {
+  .firstHeading {
+    font-size: 48px;
+  }
+  .heroText {
+    font-size: 24px;
+  }
+  .secondHeading {
+    font-size: 48px;
+  }
+  .heroBtn {
+    padding: 30px;
+  }
+  .aboutMeText {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .firstHeading {
+    font-size: 64px;
+  }
+  .heroBtn {
+    font-size: 24px;
+  }
+  .secondHeading {
+    font-size: 64px;
+  }
+  .aboutMe {
+    flex-direction: row;
+  }
+  .aboutMeHeadingMob {
+    display: none;
+  }
+  .aboutMeHeadingPc {
+    display: block;
+  }
+  .aboutMeText {
+    max-width: 70%;
+    margin: 0 auto;
+    font-size: 24px;
+  }
 }

@@ -61,12 +61,15 @@ export default function Header() {
           <a className={css.navLink} href="">
             Contacts
           </a>
+          <a className={css.navLink} href="#aboutMe">
+            About me
+          </a>
           <a className={css.navLink} href="">
             Create your design
           </a>
         </nav>
         <button onClick={openModal} className={css.burger}>
-          <IoMenu className={css.burgerIcon} size={36} color="#000" />
+          <IoMenu className={css.burgerIcon} size={36} color="#641639" />
         </button>
       </header>
       {modalIsOpen && (
@@ -86,7 +89,7 @@ export default function Header() {
               <a className={css.modalLink} href="">
                 Contacts
               </a>
-              <a className={css.modalLink} href="">
+              <a className={css.modalLink} href="#aboutMe">
                 About me
               </a>
             </nav>

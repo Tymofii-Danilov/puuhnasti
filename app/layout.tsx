@@ -2,8 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import "modern-normalize/modern-normalize.css";
-import { Inter } from "next/font/google";
+import { Nunito, Inter } from "next/font/google";
 
+const nunito = Nunito({
+  subsets: ["latin", "cyrillic"],
+  display: "swap",
+});
 const inter = Inter({
   subsets: ["latin", "cyrillic"],
   display: "swap",

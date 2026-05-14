@@ -14,15 +14,16 @@ export default function Gallery() {
         spaceBetween={10}
         slidesPerView="auto"
         className={css.list}
-        loop={true}
+        mousewheel={true}
         grabCursor={true}
         autoplay={{
           delay: 0,
           disableOnInteraction: false,
         }}
-        speed={7000}
+        speed={2000}
         pagination={{
           el: ".customPagination",
+          clickable: true,
         }}
       >
         <SwiperSlide>
@@ -37,8 +38,8 @@ export default function Gallery() {
         <SwiperSlide>
           <Image
             className={css.rugsPics}
-            width={500}
-            height={500}
+            width={2000}
+            height={2000}
             src="/rug6.jpg"
             alt="rug"
           ></Image>
