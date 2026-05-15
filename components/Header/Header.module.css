@@ -43,12 +43,15 @@
 
 .navLink {
   text-decoration: none;
-  color: #641639;
-  padding: 12px;
+  color: #d13a7e;
   border-radius: 20px;
   transition: 300ms;
 }
-
+@media only screen and (min-width: 1280px) {
+  .navLink {
+    padding: 12px;
+  }
+}
 .navLink:hover,
 .navLink:focus {
   background-image: linear-gradient(#86224f, #f15b97);
@@ -111,8 +114,8 @@
 }
 .modalClose {
   position: absolute;
-  top: 10;
-  right: 15;
+  top: 15px;
+  right: 15px;
   border: 3px #fff solid;
   border-radius: 50px;
   color: #fff;

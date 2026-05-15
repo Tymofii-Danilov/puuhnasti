@@ -5,6 +5,7 @@ import { GiSandsOfTime } from "react-icons/gi";
 import { MdOutlineDoneAll } from "react-icons/md";
 import Gallery from "@/components/Swiper/Swiper";
 import Image from "next/image";
+import Instagram from "@/components/Instagram/Instagram";
 
 export default function Home() {
   return (
@@ -57,7 +58,7 @@ export default function Home() {
         <h2 className={css.secondHeading}>Collection</h2>
         <Gallery />
       </section>
-      <section>
+      <section className={css.how}>
         <h2 className={css.secondHeading}>How it&apos;s done?</h2>
         <svg width="0" height="0" style={{ position: "absolute" }}>
           <defs>
@@ -106,6 +107,10 @@ export default function Home() {
             </p>
           </li>
         </ul>
+      </section>
+      <section className={css.instagram}>
+        <h2 className={css.secondHeading}>Instagram</h2>
+        <Instagram />
       </section>
     </main>
   );

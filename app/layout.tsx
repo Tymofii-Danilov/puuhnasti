@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header/Header";
 import "modern-normalize/modern-normalize.css";
 import { Nunito, Inter } from "next/font/google";
+import Footer from "@/components/Footer/Footer";
 
 const nunito = Nunito({
   subsets: ["latin", "cyrillic"],
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className={`container ${inter.className}`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

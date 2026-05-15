@@ -17,10 +17,10 @@ export default function Gallery() {
         mousewheel={true}
         grabCursor={true}
         autoplay={{
-          delay: 0,
+          delay: 2000,
           disableOnInteraction: false,
         }}
-        speed={2000}
+        speed={1000}
         pagination={{
           el: ".customPagination",
           clickable: true,
