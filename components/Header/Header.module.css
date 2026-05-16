@@ -11,7 +11,7 @@
   align-items: center;
   gap: 30px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .nav {
@@ -45,11 +45,15 @@
   text-decoration: none;
   color: #d13a7e;
   border-radius: 20px;
+  padding: 10px;
   transition: 300ms;
 }
 @media only screen and (min-width: 1280px) {
   .navLink {
     padding: 12px;
+  }
+  .nav {
+    font-size: 20px;
   }
 }
 .navLink:hover,
