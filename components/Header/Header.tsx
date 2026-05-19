@@ -45,17 +45,17 @@ export default function Header() {
   return (
     <>
       <header className={`${css.header} ${showHeader ? css.show : css.hide}`}>
-        <Link href="/">
+        <Link href="/" className={css.homeLink}>
           <Image
-            className={css.homeLink}
-            src="/logo.webp"
+            src="/smallLogo.png"
             alt="puuhnasti logo"
-            width={160}
-            height={35}
+            width={50}
+            height={50}
+            className={css.circleLogo}
           />
         </Link>
         <nav className={css.nav}>
-          <a className={css.navLink} href="">
+          <a className={css.navLink} href="/Shop">
             Shop
           </a>
           <a className={css.navLink} href="">
@@ -64,7 +64,7 @@ export default function Header() {
           <a className={css.navLink} href="#aboutMe">
             About me
           </a>
-          <a className={css.navLink} href="">
+          <a className={`${css.navLink} ${css.bigSpan}`} href="">
             Create your design
           </a>
         </nav>
@@ -77,21 +77,21 @@ export default function Header() {
           <div className={css.modal}>
             <button className={css.modalClose}>x</button>
             <nav className={css.modalNav}>
-              <a className={css.modalLink} href="">
-                Home page
-              </a>
-              <a className={css.modalLink} href="">
+              <Link className={css.modalLink} href="/">
+                Home
+              </Link>
+              <Link className={css.modalLink} href="/Shop">
                 Shop
-              </a>
-              <a className={css.modalLink} href="">
+              </Link>
+              <Link className={`${css.modalLink} ${css.smallSpan}`} href="">
                 Create your design
-              </a>
-              <a className={css.modalLink} href="">
+              </Link>
+              <Link className={css.modalLink} href="">
                 Contacts
-              </a>
-              <a className={css.modalLink} href="#aboutMe">
+              </Link>
+              <Link className={css.modalLink} href="#aboutMe">
                 About me
-              </a>
+              </Link>
             </nav>
           </div>
         </div>

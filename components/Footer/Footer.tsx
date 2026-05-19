@@ -4,7 +4,7 @@ import css from "./Footer.module.css";
 
 export default function Footer() {
   return (
-    <section className={css.footer}>
+    <section className={`container ${css.footer}`}>
       <Link href="/" className={css.imgWrap}>
         <Image
           className={css.homeLink}
@@ -28,6 +28,7 @@ export default function Footer() {
           Create your design
         </a>
       </nav>
+      <p className={css.developer}>Developer: Tymofii Danilov</p>
     </section>
   );
 }

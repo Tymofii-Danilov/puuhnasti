@@ -1,0 +1,14 @@
+.btn {
+  /* border: 1px #86224f solid; */
+  color: #86224f;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  background-color: transparent;
+  cursor: pointer;
+}
+@media only screen and (min-width: 1280px) {
+  .btn {
+    font-size: 24px;
+  }
+}

@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`container ${inter.className}`}>
+      <body className={`${inter.className}`}>
         <Header />
         {children}
         <Footer />

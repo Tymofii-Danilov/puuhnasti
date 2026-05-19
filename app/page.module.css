@@ -1,19 +1,22 @@
 .hero {
   display: flex;
+  gap: 24px;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
   text-align: center;
-  padding-bottom: 80px;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+    linear-gradient(rgba(255, 255, 255, 0.596), rgba(255, 255, 255, 0.596)),
     url(/grid.webp);
-  background-size: 500px 150px;
+  background-size: 960px 349px;
+}
+@media only screen and (min-width: 768px) {
+  .hero {
+    gap: 16px;
+  }
 }
 .heroBtn {
   width: 80%;
-  background-color: #fff;
   color: #86224f;
   background-image: linear-gradient(#fca9d3, #f15b97);
   padding: 15px;
@@ -26,7 +29,7 @@
   transition: 300ms;
   cursor: pointer;
   text-decoration: none;
-  margin-top: 20px;
+  box-shadow: 4px 8px 15px 0px #86224f62;
 }
 
 .heroBtn:hover {
@@ -35,61 +38,44 @@
   border-radius: 50px;
 }
 
-.firstHeading {
-  background-image: linear-gradient(#86224f, #f15b97);
-  background-clip: content-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 36px;
-  font-weight: 900;
-  letter-spacing: -4%;
-}
 .heroText {
   color: #f15b97;
   font-size: 16px;
   letter-spacing: 10px;
   opacity: 70%;
-}
-
-.secondHeading {
-  background-image: linear-gradient(#86224f, #f15b97);
-  background-clip: content-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 36px;
-  font-weight: 900;
-  letter-spacing: -4%;
-  text-align: center;
+  margin: 0;
 }
 
 .how {
   position: relative;
   border-radius: 50px;
-  padding: 40px;
 }
 .how::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url(/bg.JPG);
+  background-image: url(/bg.jpg);
   background-size: cover;
   background-position: center;
-  opacity: 0.4;
+  opacity: 0.35;
   z-index: -1;
-  border-radius: 50px;
 }
 
 .collection {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
-    url(/grid.webp);
-  background-size: 500px 150px;
+  position: relative;
+}
+.collection::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.35;
+  z-index: -1;
 }
 
 .howList {
-  margin-top: 60px;
   list-style: none;
   display: flex;
   gap: 20px;
@@ -112,6 +98,15 @@
   border-radius: 50px;
   border: 4px #d64f853a solid;
   padding: 20px;
+  box-shadow: 4px 8px 15px 0px #86224f25;
+  transition: 250ms ease;
+  background-color: rgba(255, 255, 255, 0.61);
+  /* background-color: #00000010; */
+  box-shadow: 4px 8px 15px 0px #86224f62;
+  border-radius: 40px;
+}
+.howItem:hover {
+  transform: scale(1.01);
 }
 
 .howText {
@@ -133,59 +128,54 @@
 .aboutMe {
   display: flex;
   flex-direction: column;
-  border-radius: 50px;
-  padding: 20px;
-  position: relative;
+  gap: 24px;
 }
-.aboutMe::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url(/bg.JPG);
-  background-size: cover;
-  background-position: center;
-  opacity: 0.4;
-  z-index: -1;
-  border-radius: 50px;
+@media only screen and (min-width: 768px) {
+  .aboutMe {
+    gap: 36px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .aboutMe {
+    gap: 48px;
+  }
 }
 .aboutMeImg {
   width: auto;
   height: auto;
   border-radius: 50px;
+  box-shadow: 4px 8px 15px 0px #86224f62;
+}
+.aboutMeInfo {
+  box-shadow: 4px 8px 15px 0px #86224f62;
+  border-radius: 40px;
 }
 .aboutMeText {
   color: #d64f85;
   font-size: 16px;
   font-weight: 700;
   font-style: italic;
-  padding: 20px;
+  padding: 30px;
   opacity: 70%;
 }
 .aboutMeHeadingMob {
   display: block;
+  margin-bottom: 0;
 }
 .aboutMeHeadingPc {
   display: none;
 }
 
 .instagram {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)),
+    linear-gradient(rgba(255, 255, 255, 0.596), rgba(255, 255, 255, 0.596)),
     url(/grid.webp);
-  background-size: 500px 150px;
+  background-size: 960px 349px;
 }
 
 @media only screen and (min-width: 768px) {
-  .firstHeading {
-    font-size: 48px;
-  }
   .heroText {
     font-size: 24px;
-  }
-  .secondHeading {
-    font-size: 48px;
   }
   .heroBtn {
     padding: 30px;
@@ -195,34 +185,23 @@
   }
 }
 @media only screen and (min-width: 1280px) {
-  .firstHeading {
-    font-size: 64px;
-  }
-  .hero {
-    padding-bottom: 120px;
-  }
   .heroBtn {
     font-size: 24px;
   }
-  .secondHeading {
-    font-size: 64px;
-  }
   .aboutMe {
     flex-direction: row;
-    padding: 40px;
   }
   .aboutMeHeadingMob {
     display: none;
   }
   .aboutMeHeadingPc {
     display: block;
+    margin-top: 48px;
   }
   .aboutMeText {
     max-width: 70%;
     margin: 0 auto;
     font-size: 24px;
-  }
-  .collection {
-    margin-top: 90px;
+    padding: 0;
   }
 }

@@ -10,9 +10,11 @@ import Instagram from "@/components/Instagram/Instagram";
 export default function Home() {
   return (
     <main>
-      <section className={css.hero}>
-        <h1 className={css.firstHeading}>
-          Handmade tufted rugs <br /> designed exactly the way you imagine them
+      <section className={`container ${css.hero}`}>
+        <h1 className={`firstHeading`}>
+          Handmade tufted rugs <br />
+          designed exactly <br />
+          the way you imagine them
         </h1>
         <HeroImage />
         <p className={css.heroText}>Make Your Space Softer with Custom Rugs</p>
@@ -20,9 +22,13 @@ export default function Home() {
           CHOOSE YOURS
         </a>
       </section>
-      <section id="aboutMe" className={css.aboutMe}>
+      <section id="collection" className={`container ${css.collection}`}>
+        <h2 className={`secondHeading`}>Collection</h2>
+        <Gallery />
+      </section>
+      <section id="aboutMe" className={`container ${css.aboutMe}`}>
         <h2
-          className={`${css.secondHeading} ${css.aboutMeHeading} ${css.aboutMeHeadingMob}`}
+          className={`secondHeading ${css.aboutMeHeading} ${css.aboutMeHeadingMob}`}
         >
           About Me
         </h2>
@@ -36,7 +42,7 @@ export default function Home() {
         />
         <div className={css.aboutMeInfo}>
           <h2
-            className={`${css.secondHeading} ${css.aboutMeHeading} ${css.aboutMeHeadingPc}`}
+            className={`secondHeading ${css.aboutMeHeading} ${css.aboutMeHeadingPc}`}
           >
             About Me
           </h2>
@@ -54,12 +60,8 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section id="collection" className={css.collection}>
-        <h2 className={css.secondHeading}>Collection</h2>
-        <Gallery />
-      </section>
-      <section className={css.how}>
-        <h2 className={css.secondHeading}>How it&apos;s done?</h2>
+      <section className={`container ${css.how}`}>
+        <h2 className={`secondHeading`}>How it&apos;s done?</h2>
         <svg width="0" height="0" style={{ position: "absolute" }}>
           <defs>
             <linearGradient id="iconGrad" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -108,8 +110,8 @@ export default function Home() {
           </li>
         </ul>
       </section>
-      <section className={css.instagram}>
-        <h2 className={css.secondHeading}>Instagram</h2>
+      <section className={`container ${css.instagram}`}>
+        <h2 className={`secondHeading`}>Instagram</h2>
         <Instagram />
       </section>
     </main>

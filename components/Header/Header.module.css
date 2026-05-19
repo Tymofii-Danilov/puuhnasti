@@ -1,7 +1,7 @@
 .homeLink {
   transition: 300ms;
+  height: 50px;
 }
-
 .homeLink:hover {
   transform: scale(1.05);
 }
@@ -55,6 +55,9 @@
   .nav {
     font-size: 20px;
   }
+  .bigSpan {
+    padding: 12px;
+  }
 }
 .navLink:hover,
 .navLink:focus {
@@ -65,7 +68,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 20px;
+  padding: 16px 24px;
   background-color: #fff;
   position: sticky;
   top: 0;
@@ -73,6 +76,11 @@
   width: 100%;
   z-index: 999;
   transition: 0.3s ease;
+}
+@media only screen and (min-width: 480px) {
+  .header {
+    padding: 16px 32px;
+  }
 }
 .show {
   transform: translateY(0);
@@ -85,8 +93,8 @@
 .backdrop {
   position: fixed;
   inset: 0;
-  background-image: linear-gradient(#86224fe1, #f15b97e5);
-  backdrop-filter: blur(5px);
+  background-image: linear-gradient(#86224f6b, #f15b976b);
+  backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,8 +103,8 @@
 
 .modal {
   position: relative;
-  width: 100vh;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 30px;
   display: flex;
   justify-content: center;
@@ -131,4 +139,15 @@
 .modalClose:active {
   background: #fff;
   color: #000;
+}
+
+.smallSpan {
+  box-shadow: 8px 8px 15px 10px #86224f7e;
+  padding: 20px;
+  border-radius: 30px;
+}
+.bigSpan {
+  box-shadow: 2px 4px 7.5px 0px #86224f36;
+  border-radius: 20px;
+  padding: 12px;
 }
