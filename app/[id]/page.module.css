@@ -16,7 +16,7 @@
   background-clip: content-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 0;
+  margin-bottom: 0;
 }
 .productDescription {
   opacity: 60%;
@@ -60,11 +60,12 @@
   background-color: #00000011;
   border-radius: 10px;
   padding: 4px;
-  margin: 0;
+  margin-bottom: 0;
 }
 .nameSizeWrap {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .productReady {
   background-color: rgba(30, 177, 62, 0.719);
@@ -88,7 +89,7 @@
   margin-top: auto;
 }
 .cardInfo {
-  padding: 12px;
+  padding: 0 16px 16px 16px;
   display: flex;
   flex-direction: column;
 }

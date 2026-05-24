@@ -14,21 +14,14 @@ export default function Header() {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-
-      // scrolling up
       if (currentScrollY < lastScrollY.current) {
         setShowHeader(true);
-      }
-      // scrolling down
-      else if (currentScrollY > lastScrollY.current) {
+      } else if (currentScrollY > lastScrollY.current) {
         setShowHeader(false);
       }
-
-      // always visible at top
       if (currentScrollY < 10) {
         setShowHeader(true);
       }
-
       lastScrollY.current = currentScrollY;
     };
 
@@ -55,18 +48,21 @@ export default function Header() {
           />
         </Link>
         <nav className={css.nav}>
-          <a className={css.navLink} href="/Shop">
+          <Link className={css.navLink} href="/Shop">
             Shop
-          </a>
+          </Link>
           <a className={css.navLink} href="">
             Contacts
           </a>
           <a className={css.navLink} href="#aboutMe">
             About me
           </a>
-          <a className={`${css.navLink} ${css.bigSpan}`} href="">
+          <Link
+            className={`${css.navLink} ${css.bigSpan}`}
+            href="/CreateYourDesign"
+          >
             Create your design
-          </a>
+          </Link>
         </nav>
         <button onClick={openModal} className={css.burger}>
           <IoMenu className={css.burgerIcon} size={36} color="#641639" />
@@ -83,7 +79,10 @@ export default function Header() {
               <Link className={css.modalLink} href="/Shop">
                 Shop
               </Link>
-              <Link className={`${css.modalLink} ${css.smallSpan}`} href="">
+              <Link
+                className={`${css.modalLink} ${css.smallSpan}`}
+                href="/CreateYourDesign"
+              >
                 Create your design
               </Link>
               <Link className={css.modalLink} href="">

@@ -14,9 +14,11 @@
 }
 .cardInfo {
   padding: 0 12px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
-.shopItem:hover,
-.shopItem:focus {
+.shopItem:hover {
   transform: scale(1.01);
 }
 @media only screen and (min-width: 768px) {
@@ -90,7 +92,6 @@
   background-color: #00000011;
   border-radius: 10px;
   padding: 4px;
-
   margin-bottom: 0;
 }
 .nameSizeWrap {

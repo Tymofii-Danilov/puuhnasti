@@ -129,6 +129,10 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.596), rgba(255, 255, 255, 0.596)),
+    url(/grid.webp);
+  background-size: 960px 349px;
 }
 @media only screen and (min-width: 768px) {
   .aboutMe {
@@ -147,8 +151,9 @@
   box-shadow: 4px 8px 15px 0px #86224f62;
 }
 .aboutMeInfo {
-  box-shadow: 4px 8px 15px 0px #86224f62;
+  /* box-shadow: 4px 8px 15px 0px #86224f62; */
   border-radius: 40px;
+  /* background-color: rgb(255, 255, 255); */
 }
 .aboutMeText {
   color: #d64f85;
