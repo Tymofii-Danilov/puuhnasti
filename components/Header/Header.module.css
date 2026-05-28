@@ -25,9 +25,7 @@
   background-color: #fff;
 }
 
-.burger:hover,
-.burger:active,
-.burger:focus {
+.burger:hover {
   transform: rotate(90deg);
 }
 
@@ -93,12 +91,13 @@
 .backdrop {
   position: fixed;
   inset: 0;
-  background-image: linear-gradient(#86224f6b, #f15b976b);
-  backdrop-filter: blur(10px);
+  background-color: white;
+  /* background-image: linear-gradient(#86224f6b, #f15b976b); */
+  backdrop-filter: blur(30px);
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 999;
+  z-index: 100;
 }
 
 .modal {
@@ -115,14 +114,14 @@
   display: flex;
   gap: 50px;
   font-size: 30px;
-
+  text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 .modalLink {
   text-decoration: none;
-  color: white;
+  color: #86224f;
 }
 .modalClose {
   position: absolute;

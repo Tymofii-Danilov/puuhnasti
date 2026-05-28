@@ -11,13 +11,11 @@ export default function Home() {
   return (
     <main>
       <section className={`container ${css.hero}`}>
-        <h1 className={`firstHeading`}>
-          Handmade tufted rugs <br />
-          designed exactly <br />
-          the way you imagine them
+        <h1 className={`heroHeading`}>
+          Handmade tufted rugs the way you imagine them
         </h1>
         <HeroImage />
-        <p className={css.heroText}>Make Your Space Softer with Custom Rugs</p>
+        <p className={css.heroText}>Make your space softer with custom rugs</p>
         <a type="button" href="#collection" className={css.heroBtn}>
           CHOOSE YOURS
         </a>

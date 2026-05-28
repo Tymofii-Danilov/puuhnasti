@@ -1,6 +1,6 @@
 .hero {
   display: flex;
-  gap: 24px;
+  gap: 30px;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -12,7 +12,12 @@
 }
 @media only screen and (min-width: 768px) {
   .hero {
-    gap: 16px;
+    gap: 30px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero {
+    gap: 30px;
   }
 }
 .heroBtn {
@@ -41,7 +46,7 @@
 .heroText {
   color: #f15b97;
   font-size: 16px;
-  letter-spacing: 10px;
+  letter-spacing: 4px;
   opacity: 70%;
   margin: 0;
 }

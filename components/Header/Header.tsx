@@ -32,7 +32,11 @@ export default function Header() {
     };
   }, []);
 
-  const openModal = () => {
+  const handleModal = () => {
+    if (modalIsOpen) {
+      setModalIsOpen(false);
+      return;
+    }
     setModalIsOpen(true);
   };
   return (
@@ -48,15 +52,18 @@ export default function Header() {
           />
         </Link>
         <nav className={css.nav}>
+          <Link className={css.navLink} href="/">
+            Home
+          </Link>
           <Link className={css.navLink} href="/Shop">
             Shop
           </Link>
-          <a className={css.navLink} href="">
+          {/* <a className={css.navLink} href="">
             Contacts
-          </a>
-          <a className={css.navLink} href="#aboutMe">
+          </a> */}
+          <Link className={css.navLink} href="/#aboutMe">
             About me
-          </a>
+          </Link>
           <Link
             className={`${css.navLink} ${css.bigSpan}`}
             href="/CreateYourDesign"
@@ -64,14 +71,14 @@ export default function Header() {
             Create your design
           </Link>
         </nav>
-        <button onClick={openModal} className={css.burger}>
+        <button onClick={handleModal} className={css.burger}>
           <IoMenu className={css.burgerIcon} size={36} color="#641639" />
         </button>
       </header>
       {modalIsOpen && (
         <div onClick={() => setModalIsOpen(false)} className={css.backdrop}>
           <div className={css.modal}>
-            <button className={css.modalClose}>x</button>
+            {/* <button className={css.modalClose}>x</button> */}
             <nav className={css.modalNav}>
               <Link className={css.modalLink} href="/">
                 Home
@@ -85,10 +92,10 @@ export default function Header() {
               >
                 Create your design
               </Link>
-              <Link className={css.modalLink} href="">
+              {/* <Link className={css.modalLink} href="">
                 Contacts
-              </Link>
-              <Link className={css.modalLink} href="#aboutMe">
+              </Link> */}
+              <Link className={css.modalLink} href="/#aboutMe">
                 About me
               </Link>
             </nav>

@@ -15,18 +15,21 @@ export default function Footer() {
         />
       </Link>
       <nav className={css.nav}>
-        <a className={css.navLink} href="">
+        <Link className={css.navLink} href="/Shop">
           Shop
-        </a>
-        <a className={css.navLink} href="">
+        </Link>
+        {/* <a className={css.navLink} href="">
           Contacts
-        </a>
-        <a className={css.navLink} href="#aboutMe">
+        </a> */}
+        <Link className={css.navLink} href="/#aboutMe">
           About me
-        </a>
-        <a className={css.navLink} href="">
+        </Link>
+        <Link
+          className={`${css.navLink} ${css.bigSpan}`}
+          href="/CreateYourDesign"
+        >
           Create your design
-        </a>
+        </Link>
       </nav>
       <p className={css.developer}>Developer: Tymofii Danilov</p>
     </section>

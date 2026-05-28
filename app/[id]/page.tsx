@@ -15,7 +15,7 @@ export default async function Product({ params }: ProductProps) {
       {note && (
         <section className={`container ${css.section}`}>
           <div className={css.headingBackWrap}>
-            <h1 className="firstHeading">Product details</h1>
+            <h1 className="secondHeading">Product details</h1>
             <GoBack />
           </div>
           <div className={css.card}>

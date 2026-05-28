@@ -48,7 +48,7 @@
 
 .img {
   border-radius: 10px;
-  height: auto;
+  /* height: auto; */
   object-fit: contain;
   cursor: default;
   pointer-events: none;
@@ -88,12 +88,6 @@
   gap: 10px;
   flex-direction: column;
 }
-
-/* .tools {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} */
 .btns {
   display: flex;
   width: 100%;
